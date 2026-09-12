@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter | OIBSIP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <div class="brand">OIBSIP <span>LEVEL 1</span></div>
+      <p class="eyebrow">TEMPERATURE TOOL</p>
+      <h1>Convert temperature<br><span>with confidence.</span></h1>
+      <p class="intro">Enter a value, choose the source and target units, then convert instantly.</p>
+
+      <form id="converterForm" novalidate>
+        <label for="temperature">Temperature</label>
+        <input id="temperature" type="number" step="any" placeholder="e.g. 25" inputmode="decimal" required>
+
+        <div class="row">
+          <div><label for="fromUnit">From</label><select id="fromUnit"><option value="C">Celsius (°C)</option><option value="F">Fahrenheit (°F)</option><option value="K">Kelvin (K)</option></select></div>
+          <div class="swap-wrap"><button type="button" id="swapBtn" class="swap" aria-label="Swap units">⇄</button></div>
+          <div><label for="toUnit">To</label><select id="toUnit"><option value="F">Fahrenheit (°F)</option><option value="C">Celsius (°C)</option><option value="K">Kelvin (K)</option></select></div>
+        </div>
+
+        <button class="convert" type="submit">Convert Temperature</button>
+      </form>
+
+      <div id="message" class="message" aria-live="polite"></div>
+      <div class="result" id="result" hidden>
+        <span>Converted result</span>
+        <strong id="resultValue">—</strong>
+      </div>
+
+      <div class="reference">
+        <span>Absolute zero</span>
+        <strong>0 K = −273.15 °C = −459.67 °F</strong>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

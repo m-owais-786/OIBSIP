@@ -1,22 +1,29 @@
-# OIBSIP — Web Development & Designing — Level 1
+# OIBSIP Level 1 — Temperature Converter
 
-**Intern:** Muhammad Owais
+**Track:** Web Development & Designing  
+**Task:** Level 1, Task 3 — Temperature Converter  
+**Author:** Muhammad Owais
 
-This repository contains the three tasks required for Level 1 of the Web Development & Designing track:
+## Technologies
+- HTML5
+- CSS3
+- Vanilla JavaScript
 
-1. Landing Page
-2. Personal Portfolio
-3. Temperature Converter
+## Features
+- Numeric input validation
+- Celsius, Fahrenheit and Kelvin selection
+- Conversion button and result display
+- Absolute-zero validation
+- Unit swap button
+- Responsive centered UI
 
-Each project is self-contained with source code and a README.
+## Conversion logic
+- Celsius → Fahrenheit: `(C × 9/5) + 32`
+- Fahrenheit → Celsius: `(F − 32) × 5/9`
+- Celsius → Kelvin: `C + 273.15`
+- Kelvin → Celsius: `K − 273.15`
+- Fahrenheit → Kelvin: `(F − 32) × 5/9 + 273.15`
+- Kelvin → Fahrenheit: `(K − 273.15) × 9/5 + 32`
 
-## GitHub submission
-The OIBSIP task guide requires the repository name to be exactly `OIBSIP`.
-
-## Demo title card
-For each demo video, show this static title card for the first 2 seconds:
-
-**Muhammad Owais | Web Development & Designing | [Task Title]**
-
-## Before publishing
-For the portfolio, replace `your-email@example.com` with the email address you want to display publicly.
+## Run
+Open `index.html` in any modern browser.
