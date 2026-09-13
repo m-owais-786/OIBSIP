@@ -3,45 +3,85 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temperature Converter | OIBSIP</title>
+  <meta name="description" content="NovaLaunch landing page — modern digital solutions.">
+  <title>NovaLaunch | Digital Solutions</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="app">
-    <section class="card">
-      <div class="brand">OIBSIP <span>LEVEL 1</span></div>
-      <p class="eyebrow">TEMPERATURE TOOL</p>
-      <h1>Convert temperature<br><span>with confidence.</span></h1>
-      <p class="intro">Enter a value, choose the source and target units, then convert instantly.</p>
+  <header class="navbar">
+    <a class="brand" href="#home">Nova<span>Launch</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-      <form id="converterForm" novalidate>
-        <label for="temperature">Temperature</label>
-        <input id="temperature" type="number" step="any" placeholder="e.g. 25" inputmode="decimal" required>
-
-        <div class="row">
-          <div><label for="fromUnit">From</label><select id="fromUnit"><option value="C">Celsius (°C)</option><option value="F">Fahrenheit (°F)</option><option value="K">Kelvin (K)</option></select></div>
-          <div class="swap-wrap"><button type="button" id="swapBtn" class="swap" aria-label="Swap units">⇄</button></div>
-          <div><label for="toUnit">To</label><select id="toUnit"><option value="F">Fahrenheit (°F)</option><option value="C">Celsius (°C)</option><option value="K">Kelvin (K)</option></select></div>
-        </div>
-
-        <button class="convert" type="submit">Convert Temperature</button>
-      </form>
-
-      <div id="message" class="message" aria-live="polite"></div>
-      <div class="result" id="result" hidden>
-        <span>Converted result</span>
-        <strong id="resultValue">—</strong>
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SMARTER DIGITAL EXPERIENCES</p>
+        <h1>Build a brand people remember.</h1>
+        <p class="hero-text">NovaLaunch helps ambitious businesses turn ideas into clean, fast and engaging digital experiences.</p>
+        <a class="btn" href="#features">Explore Features</a>
       </div>
-
-      <div class="reference">
-        <span>Absolute zero</span>
-        <strong>0 K = −273.15 °C = −459.67 °F</strong>
+      <div class="hero-card" aria-label="Digital growth illustration">
+        <div class="orb"></div>
+        <div class="mini-card">
+          <span>Growth</span>
+          <strong>+82%</strong>
+          <small>this month</small>
+        </div>
       </div>
     </section>
+
+    <section id="features" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">WHY NOVALAUNCH</p>
+        <h2>Everything you need to move forward.</h2>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="icon">01</div>
+          <h3>Modern Design</h3>
+          <p>Focused layouts, readable typography and a consistent visual system built for clarity.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">02</div>
+          <h3>Responsive First</h3>
+          <p>Flexible grids and spacing keep your experience polished on phones, tablets and desktops.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">03</div>
+          <h3>Made to Grow</h3>
+          <p>A scalable foundation that can evolve from a simple landing page into a full product.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div>
+        <p class="eyebrow">ABOUT THE BRAND</p>
+        <h2>Simple technology. Meaningful results.</h2>
+      </div>
+      <p>We believe great digital products should feel effortless. NovaLaunch combines thoughtful design and practical technology to help ideas become useful experiences.</p>
+    </section>
+
+    <section class="cta" id="contact">
+      <div>
+        <p class="eyebrow">READY TO START?</p>
+        <h2>Let’s turn your next idea into a launch.</h2>
+      </div>
+      <a class="btn btn-light" href="mailto:hello@example.com">Get in Touch</a>
+    </section>
   </main>
-  <script src="script.js"></script>
+
+  <footer>
+    <p>© 2026 NovaLaunch. All rights reserved.</p>
+    <div><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="mailto:hello@example.com">Email</a></div>
+  </footer>
 </body>
 </html>

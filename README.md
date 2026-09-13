@@ -1,29 +1,24 @@
-# OIBSIP Level 1 — Temperature Converter
+# OIBSIP Level 1 — Landing Page
 
 **Track:** Web Development & Designing  
-**Task:** Level 1, Task 3 — Temperature Converter  
+**Task:** Level 1, Task 1 — Landing Page  
 **Author:** Muhammad Owais
 
 ## Technologies
 - HTML5
 - CSS3
-- Vanilla JavaScript
+- Flexbox / CSS Grid
+- Responsive design
 
-## Features
-- Numeric input validation
-- Celsius, Fahrenheit and Kelvin selection
-- Conversion button and result display
-- Absolute-zero validation
-- Unit swap button
-- Responsive centered UI
-
-## Conversion logic
-- Celsius → Fahrenheit: `(C × 9/5) + 32`
-- Fahrenheit → Celsius: `(F − 32) × 5/9`
-- Celsius → Kelvin: `C + 273.15`
-- Kelvin → Celsius: `K − 273.15`
-- Fahrenheit → Kelvin: `(F − 32) × 5/9 + 273.15`
-- Kelvin → Fahrenheit: `(K − 273.15) × 9/5 + 32`
+## Requirements covered
+- Sticky navigation with 3+ links
+- Hero headline, subheadline and CTA
+- 2+ content sections
+- Footer with contact/social placeholders
+- Consistent colour palette
+- Responsive mobile layout
+- Intentional spacing and box sizing
+- Multiple typography sizes
 
 ## Run
 Open `index.html` in any modern browser.
