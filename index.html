@@ -3,85 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="NovaLaunch landing page — modern digital solutions.">
-  <title>NovaLaunch | Digital Solutions</title>
+  <meta name="description" content="Muhammad Owais — Frontend Developer portfolio.">
+  <title>Muhammad Owais | Frontend Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="navbar">
-    <a class="brand" href="#home">Nova<span>Launch</span></a>
-    <nav aria-label="Main navigation">
-      <a href="#features">Features</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header class="nav">
+  <a href="#home" class="logo">M. Owais<span>.</span></a>
+  <nav aria-label="Portfolio navigation">
+    <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <main id="home">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">SMARTER DIGITAL EXPERIENCES</p>
-        <h1>Build a brand people remember.</h1>
-        <p class="hero-text">NovaLaunch helps ambitious businesses turn ideas into clean, fast and engaging digital experiences.</p>
-        <a class="btn" href="#features">Explore Features</a>
-      </div>
-      <div class="hero-card" aria-label="Digital growth illustration">
-        <div class="orb"></div>
-        <div class="mini-card">
-          <span>Growth</span>
-          <strong>+82%</strong>
-          <small>this month</small>
-        </div>
-      </div>
-    </section>
+<main>
+<section id="home" class="hero">
+  <div>
+    <p class="tag">FRONTEND DEVELOPER • WEB DEVELOPER</p>
+    <h1>Hi, I’m <span>Muhammad Owais</span>.</h1>
+    <p class="lead">I’m a BS Software Engineering student focused on building responsive, modern web interfaces with HTML, CSS and JavaScript.</p>
+    <div class="actions"><a class="btn" href="#projects">View Projects</a><a class="btn ghost" href="#contact">Hire Me</a></div>
+  </div>
+  <div class="avatar" role="img" aria-label="Professional avatar placeholder">MO</div>
+</section>
 
-    <section id="features" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">WHY NOVALAUNCH</p>
-        <h2>Everything you need to move forward.</h2>
-      </div>
-      <div class="feature-grid">
-        <article class="feature">
-          <div class="icon">01</div>
-          <h3>Modern Design</h3>
-          <p>Focused layouts, readable typography and a consistent visual system built for clarity.</p>
-        </article>
-        <article class="feature">
-          <div class="icon">02</div>
-          <h3>Responsive First</h3>
-          <p>Flexible grids and spacing keep your experience polished on phones, tablets and desktops.</p>
-        </article>
-        <article class="feature">
-          <div class="icon">03</div>
-          <h3>Made to Grow</h3>
-          <p>A scalable foundation that can evolve from a simple landing page into a full product.</p>
-        </article>
-      </div>
-    </section>
+<section id="about" class="section">
+  <div class="section-title"><p class="tag">ABOUT ME</p><h2>Learning, building and improving.</h2></div>
+  <p class="about-text">I am a BS Software Engineering student at Sindh Madressatul Islam University, Karachi. I enjoy turning ideas into clean, responsive interfaces and continuously improving my web development skills. My current goal is to grow from frontend development toward full-stack development.</p>
+</section>
 
-    <section id="about" class="section about">
-      <div>
-        <p class="eyebrow">ABOUT THE BRAND</p>
-        <h2>Simple technology. Meaningful results.</h2>
-      </div>
-      <p>We believe great digital products should feel effortless. NovaLaunch combines thoughtful design and practical technology to help ideas become useful experiences.</p>
-    </section>
+<section id="skills" class="section alt">
+  <div class="section-title"><p class="tag">SKILLS</p><h2>My technical toolkit.</h2></div>
+  <div class="skills-grid">
+    <div class="skill"><strong>HTML5</strong><span>Semantic structure</span></div>
+    <div class="skill"><strong>CSS3</strong><span>Responsive layouts</span></div>
+    <div class="skill"><strong>JavaScript</strong><span>Interactive UI</span></div>
+    <div class="skill"><strong>React.js</strong><span>Component-based UI</span></div>
+    <div class="skill"><strong>Tailwind CSS</strong><span>Utility-first styling</span></div>
+    <div class="skill"><strong>Git & GitHub</strong><span>Version control</span></div>
+  </div>
+</section>
 
-    <section class="cta" id="contact">
-      <div>
-        <p class="eyebrow">READY TO START?</p>
-        <h2>Let’s turn your next idea into a launch.</h2>
-      </div>
-      <a class="btn btn-light" href="mailto:hello@example.com">Get in Touch</a>
-    </section>
-  </main>
+<section id="projects" class="section">
+  <div class="section-title"><p class="tag">PROJECTS</p><h2>Selected work.</h2></div>
+  <div class="projects">
+    <article class="project"><div class="number">01</div><h3>Student Attendance System</h3><p>A browser-based attendance system using HTML, CSS, JavaScript and Local Storage for marking attendance and generating percentage reports.</p><a href="https://github.com/m-owais-786" target="_blank" rel="noopener">GitHub ↗</a></article>
+    <article class="project"><div class="number">02</div><h3>Smart Bank Management System</h3><p>An OOP-based C++ project designed around core banking operations and object-oriented programming concepts.</p><a href="https://github.com/m-owais-786" target="_blank" rel="noopener">GitHub ↗</a></article>
+    <article class="project"><div class="number">03</div><h3>Personal Portfolio</h3><p>A responsive portfolio website created to present skills, projects and contact information in a clean digital résumé format.</p><a href="https://github.com/m-owais-786" target="_blank" rel="noopener">GitHub ↗</a></article>
+  </div>
+</section>
 
-  <footer>
-    <p>© 2026 NovaLaunch. All rights reserved.</p>
-    <div><a href="#">LinkedIn</a><a href="#">GitHub</a><a href="mailto:hello@example.com">Email</a></div>
-  </footer>
+<section id="contact" class="contact">
+  <p class="tag">CONTACT</p><h2>Let’s build something useful.</h2>
+  <p>Interested in working together or discussing a project?</p>
+  <a class="btn" href="mailto:-mowaisimtiazulhaq12@gmail.com">-mowaisimtiazulhaq12@gmail.com</a>
+</section>
+</main>
+
+<footer><p>© 2026 Muhammad Owais</p><a href="https://github.com/m-owais-786" target="_blank" rel="noopener">GitHub</a></footer>
 </body>
 </html>
